@@ -20,7 +20,7 @@ async def handle_webhook(request: Request):
     for comment in comments:
         post_comment(repo_data, pr_data["number"], comment)
 
-    return {"message": "Code review completed"}
+    return {"message": "Code review is completed but I like it"}
 
 @router.get("/")
 async def hello():
